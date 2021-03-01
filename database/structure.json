@@ -1,0 +1,14 @@
+{
+  "chats": {
+    "<userId>": {
+      "active": true,
+      "messages": {
+        "<messageId>": {
+          "body": "This is a message",
+          "img": "<image-url>",
+          "bot": false
+        }
+      }
+    }
+  }
+}

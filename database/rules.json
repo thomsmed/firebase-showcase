@@ -1,0 +1,26 @@
+{
+  "rules": {
+    "chats": {
+      "$userId": {
+        ".read": "$userId === auth.uid",
+        ".write": "$userId === auth.uid",
+        "active": {
+          ".validate": "newData.isBoolean()"
+        },
+        "messages": {
+          "$messageId": {
+            "body": {
+              ".validate": "newData.isString() && newData.val().length < 200"
+            },
+            "img": {
+              ".validate": "newData.isString() && newData.val().length < 200"
+            },
+            "bot": {
+              ".validate": "newData.isBoolean()"
+            }
+          }
+        }
+      }
+  	}
+  }
+}
