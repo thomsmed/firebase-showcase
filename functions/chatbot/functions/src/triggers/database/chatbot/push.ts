@@ -29,7 +29,7 @@ const push = (fcmToken?: string) => {
 
   return admin.messaging().sendToDevice(fcmToken, payload)
       .then(() => Promise.resolve(<Content> {
-        text: "I've just sendt you a push! 👍",
+        text: "I've just sent you a push! 👍",
       }));
 };
 

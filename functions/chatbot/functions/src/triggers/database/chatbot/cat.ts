@@ -9,7 +9,7 @@ const cat = () => {
   return fetch(randomCatUrl)
       .then((res: Response) => res.json())
       .then((data: RandomCat[]) => Promise.resolve(<Content> {
-        text: "Her is a random cat 😺",
+        text: "Here is a random cat 😺",
         img: data[0].url,
       }));
 };

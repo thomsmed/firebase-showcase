@@ -9,7 +9,7 @@ const dog = () => {
   return fetch(randomDogUrl)
       .then((res: Response) => res.json())
       .then((data: RandomDog) => Promise.resolve(<Content> {
-        text: "Her is a random dog 🐶",
+        text: "Here is a random dog 🐶",
         img: data.message,
       }));
 };

@@ -45,7 +45,7 @@ const AboutFirebase = () => {
             <Animated animationIn="fadeIn" animationInDuration={0.5} animationInDelay={0.3} isVisible={true}>
               <div>
                 <Header>What's it all about?</Header>
-                <SubHeader>{'>'} From a <Highlighted>web developer's perspective</Highlighted></SubHeader>
+                <SubHeader>{'>'} From a <Highlighted>front-end developer's perspective</Highlighted></SubHeader>
                 <ul>
                   <li><Highlighted>Complete back end solution</Highlighted> for your apps (Web/iOS/Android)</li>
                     <ul>
