@@ -2,6 +2,7 @@ import React from 'react';
 import 'animate.css';
 
 interface AnimatedProps {
+  children: React.ReactElement<HTMLElement>;
   animationIn?: string;
   animationOut?: string;
   animationInDelay?: number;
